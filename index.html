@@ -6,69 +6,69 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- <p id="text">
+    <p id="text">
 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima beatae sint nostrum ad aut architecto mollitia repellendus totam. Eaque est illum corrupti neque quo. Necessitatibus, odio. Ab sapiente officiis placeat?
     </p> -->
    
   <!-- good way to do it 1 -->
-    <!-- <H1>count: <span id="count">0</span></H1>
+    <H1>count: <span id="count">0</span></H1>
     <button id="increment">+</button>
-    <button id="decrement">-</button> -->
+    <button id="decrement">-</button>
     
     <!-- better way to do it by dding a class to grab it in JS -->
-    <!-- <H1>count: <span id="count">0</span></H1>
+    <H1>count: <span id="count">0</span></H1>
     <button id="increment" class="changecount">+</button>
-    <button id="decrement" class="changecount">-</button> -->
+    <button id="decrement" class="changecount">-</button>
 
    
    
    <!-- Animation with JS -->
-    <!-- <h1 id="myHeader">Hello World!</h1> -->
-   
+    <h1 id="myHeader">Hello World!</h1>
+    
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script>
         // console.log($('#text').text())
        
-    //    good way to do it 1
-        // let count = 0
-        // $('#increment').click(() =>{
-        //     count++
-        //     $('#count').text(count)
-        // })
+       good way to do it 1
+        let count = 0
+        $('#increment').click(() =>{
+            count++
+            $('#count').text(count)
+        })
 
-        // $('#decrement').click(()=> {
-        //     count--
-        //     $('#count').text(count)
-        // })
+        $('#decrement').click(()=> {
+            count--
+            $('#count').text(count)
+        })
 
-        //better way to do it since only one command is used by using if else statements
-        // let count = 0
-        // $('.changecount').click(event => {
-        //     if (event.target.id === 'increment') {
-        //         count++
-        //     } else {
-        //         count--
-        //     }
-        //     $('#count').text(count)
-        // })
+        better way to do it since only one command is used by using if else statements
+        let count = 0
+        $('.changecount').click(event => {
+            if (event.target.id === 'increment') {
+                count++
+            } else {
+                count--
+            }
+            $('#count').text(count)
+        })
 
-            //???????
-        // let count = 0
-        // $('.changecount').click(function(){
-        //     $(this).attr('id') //attr = attribute allows us to grab stuff like IDs
-        // })
+            ???????
+        let count = 0
+        $('.changecount').click(function(){
+            $(this).attr('id') //attr = attribute allows us to grab stuff like IDs
+        })
 
 
-        //Animation
-        //  $('#myHeader').animate ({opacity: 0}, 'slow')
+        Animation
+         $('#myHeader').animate ({opacity: 0}, 'slow')
 
          
-        // //  can be given various attributes
-        //  $('#myHeader').animate ({
-        //   opacity: 0
-        //   fontSize: '25px'
-        //   marginTop: '100px'
-        //  }, 3000) //can be done in seconds as well
+        //  can be given various attributes
+         $('#myHeader').animate ({
+          opacity: 0
+          fontSize: '25px'
+          marginTop: '100px'
+         }, 3000) //can be done in seconds as well
 
 
 
